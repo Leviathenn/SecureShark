@@ -2,5 +2,8 @@
     "author":"Leviathenn",
     "supported":[
         "gmail"
+    ],
+    "unsupported":[
+        "outlook"
     ]
 }
