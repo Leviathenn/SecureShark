@@ -1,0 +1,33 @@
+{
+    "action": {
+        "default_icon": {},
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "css": [
+                "contentScript.css"
+            ],
+            "js": [
+                "contentScript.js"
+            ],
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "description": "Detects Phising Emails",
+    "icons": {
+        "128": "icon128.png",
+        "16": "icon16.png",
+        "48": "icon48.png"
+    },
+    "manifest_version": 3,
+    "name": "Chrome extension",
+    "version": "0.1.0"
+}
